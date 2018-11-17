@@ -1,3 +1,7 @@
 report.html
 log.html
 output.xml
+*.jpg
+*.png
+*.log
+.idea
