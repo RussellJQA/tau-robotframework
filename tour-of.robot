@@ -5,7 +5,7 @@ Library  Collections
 
 
 Resource    resources.robot
-Resource    invoice-page.robot
+Resource    invoice-details-page.robot
 Resource    navigation.robot
 Resource    system.robot
 Resource    data.robot
