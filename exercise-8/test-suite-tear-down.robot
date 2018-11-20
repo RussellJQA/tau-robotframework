@@ -2,6 +2,9 @@
 Library  SeleniumLibrary
 Library  OperatingSystem
 
+Suite Setup  Navigate To Home Page
+Suite Teardown  ?
+
 *** Test Cases ***
 Example Test Case
     Navigate To Home Page

@@ -2,6 +2,8 @@
 Library  SeleniumLibrary
 
 Suite Setup  Navigate To Home Page
+Suite Teardown  Close Browser
+
 
 *** Test Cases ***
 Example Test Case
