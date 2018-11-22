@@ -1,6 +1,6 @@
 *** Keywords ***
 Setup Path
-    Set Environment Variable    PATH  %{PATH}:${EXECDIR}/drivers
+    Set Environment Variable    PATH  %{PATH}:${EXECDIR}/../drivers
 Configure Selenium
      Set Selenium Implicit Wait    10 Seconds
      Set Selenium Speed     .25 seconds
