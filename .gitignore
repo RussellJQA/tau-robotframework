@@ -5,3 +5,4 @@ output.xml
 *.png
 *.log
 .idea
+*.pyc
