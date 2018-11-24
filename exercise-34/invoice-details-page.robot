@@ -1,6 +1,5 @@
 *** Keywords ***
 Invoice Details Are Set To
-    [Documentation]     This keywords fills out the invoice details page
     [Arguments]  ${Name}    ${Company}  ${Type}     ${Cost}     ${Date}     ${Comments}     ${Status}
     Input Text  css:#invoiceNo_add > input   ${Name}
     Input Text  css:#compName_add > input   ${Company}
