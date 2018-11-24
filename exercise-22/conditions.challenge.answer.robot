@@ -3,7 +3,7 @@ Library  SeleniumLibrary
 Library  OperatingSystem
 
 Resource  ${EXEC_DIR}/resources.robot
-Suite Setup  Run Keywords   Navigate To Home Page  Delete Invoice
+Suite Setup  Run Keywords   Navigate To Home Page  Delete Invoice If Exists
 Suite Teardown  Run Keywords    Close Browser
 
 
@@ -34,8 +34,11 @@ Click Add Invoice
     Page Should Contain Element     invoiceNo_add
 
 Delete Invoice
+    [Arguments]  ${invoice_element}
+    Click Link  ${invoice_element}
+    Click Button    deleteButton
+
+
+Delete Invoice If Exists
     ${invoice_count}=   Get Element Count    css:[id^='invoiceNo_paulm'] > a
-    Log To Console  ${invoice_count}
-    Run Keyword If  ${invoice_count} > 0    Run Keywords
-        Click Link  css:[id^='invoiceNo_paulm'] > a
-        Click Button    deleteButton
+    Run Keyword If      ${invoice_count} > 0    Delete Invoice  css:[id^='invoiceNo_paulm'] > a
