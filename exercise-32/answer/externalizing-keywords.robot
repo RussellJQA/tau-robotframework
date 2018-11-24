@@ -3,7 +3,9 @@ Library  SeleniumLibrary
 Library  OperatingSystem
 
 Resource  ${EXEC_DIR}/resources.robot
-Suite Setup  Navigate To Home Page  Delete Invoice If Exists
+Resource  ${EXEC_DIR}/invoice-details-page.robot
+
+Suite Setup  Run Keywords   Navigate To Home Page  Delete Invoice If Exists
 Suite Teardown  Run Keywords    Close Browser
 
 
@@ -17,17 +19,6 @@ Create an Invoice
 Invoice Named Should Exist
     [Arguments]  ${Name}
     Page Should Contain     ${Name}
-
-Invoice Details Are Set To
-    [Arguments]  ${Name}    ${Company}  ${Type}     ${Cost}     ${Date}     ${Comments}     ${Status}
-    Input Text  css:#invoiceNo_add > input   ${Name}
-    Input Text  css:#compName_add > input   ${Company}
-    Input Text  css:#typeofwork_add > input   ${Type}
-    Input Text  css:#cost_add > input   ${Cost}
-    Input Text  css:#invoice_dueDate > input   ${Date}
-    Input Text  css:#comments_add > input   ${Comments}
-    Select From List By Value   css:#status_add > select    ${Status}
-    Click Button    id:createButton
 
 Navigate To Home Page
     # Requires Chromedriver in Path (See earlier Excercise)
@@ -45,7 +36,6 @@ Delete Invoice
     [Arguments]  ${invoice_element}
     Click Link  ${invoice_element}
     Click Button    deleteButton
-
 
 Delete Invoice If Exists
     ${invoice_count}=   Get Element Count    css:[id^='invoiceNo_paulm'] > a
