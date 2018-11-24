@@ -6,7 +6,7 @@ Suite Teardown  Close Browser
 
 
 *** Test Cases ***
-Example Test Case
+Create an Invoice
     Click Add Invoice
     Input Text  css:#invoiceNo_add > input   my example invoice
     Input Text  css:#compName_add > input   my example company

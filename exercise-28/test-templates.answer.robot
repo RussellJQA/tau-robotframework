@@ -8,7 +8,7 @@ Suite Teardown  Run Keywords    Close Browser
 
 
 *** Test Cases ***
-Example Test Case
+Create an Invoice
     Create Invoice  paulm-plain-invoice     my example company     plumbing    34.00      2018-10-31   Unclogged Drain  Past Due
     Run Keyword And Expect Error    *   Create Invoice  paulm-empty-invoice     my example company     plumbing     ${EMPTY}     2018-10-31   Unclogged Drain  Past Due
     Handle Alert

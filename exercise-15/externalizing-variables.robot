@@ -6,7 +6,7 @@ Suite Teardown  Close Browser
 
 
 *** Test Cases ***
-Example Test Case
+Create an Invoice
     ?
 *** Keywords ***
 Navigate To Home Page
