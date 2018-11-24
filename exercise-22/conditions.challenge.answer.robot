@@ -10,7 +10,7 @@ Suite Teardown  Run Keywords    Close Browser
 *** Test Cases ***
 Example Test Case
     Click Add Invoice
-    Input Text  css:#invoiceNo_add > input   ${my name}'s invoice
+    Input Text  css:#invoiceNo_add > input   paulm's invoice
     Input Text  css:#compName_add > input   my example company
     Input Text  css:#typeofwork_add > input   plumbing
     Input Text  css:#cost_add > input   34.00
@@ -18,6 +18,7 @@ Example Test Case
     Input Text  css:#comments_add > input   Unclogged Drain
     Select From List By Value   css:#status_add > select    Past Due
     Click Button    id:createButton
+    Page Should Contain     paulm's invoice
 
 *** Keywords ***
 Navigate To Home Page
@@ -33,8 +34,8 @@ Click Add Invoice
     Page Should Contain Element     invoiceNo_add
 
 Delete Invoice
-    ${invoice_count}=   Get Element Count    //tbody//tr//a
-    log to console  ${invoice_count}
-    :FOR    ${I}    IN RANGE     0     ${invoice_count}
-    \    Click Link  //tbody//tr//a[${I} + 1]
-    \    Click Button    deleteButton
+    ${invoice_count}=   Get Element Count    css:[id^='invoiceNo_paulm'] > a
+    Log To Console  ${invoice_count}
+    Run Keyword If  ${invoice_count} > 0    Run Keywords
+        Click Link  css:[id^='invoiceNo_paulm'] > a
+        Click Button    deleteButton

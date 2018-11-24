@@ -3,7 +3,7 @@ Library  SeleniumLibrary
 Library  OperatingSystem
 
 Resource  ${EXEC_DIR}/resources.robot
-Suite Setup  Run Keywords   Navigate To Home Page  Delete Invoice
+Suite Setup  Run Keywords   Navigate To Home Page
 Suite Teardown  Run Keywords    Close Browser
 
 
@@ -15,10 +15,12 @@ Example Test Case
     Input Text  css:#typeofwork_add > input   plumbing
     Input Text  css:#cost_add > input   34.00
     Input Text  css:#invoice_dueDate > input   2018-10-31
-    Input Text  css:#comments_add > input   stanky
+    Input Text  css:#comments_add > input   Unclogged Drain
     Select From List By Value   css:#status_add > select    Past Due
     Click Button    id:createButton
     Page Should Contain     paulm's invoice
+    ${invoice_count}=   Get Element Count    css:[id^='invoiceNo_paulm'] > a
+    Run Keyword If  ${invoice_count} > 0    Log To Console  "Page Contained Invoices"
 
 *** Keywords ***
 Navigate To Home Page
@@ -32,10 +34,3 @@ Navigate To Home Page
 Click Add Invoice
     Click Link  \#/addInvoice
     Page Should Contain Element     invoiceNo_add
-
-Delete Invoice
-    ${invoice_count}=   Get Element Count    css:[id^='invoiceNo_paulm'] > a
-    Log To Console  ${invoice_count}
-    Run Keyword If  ${invoice_count} > 0    Run Keywords
-        Click Link  css:[id^='invoiceNo_paulm'] > a
-        Click Button    deleteButton

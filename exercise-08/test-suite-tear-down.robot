@@ -11,4 +11,4 @@ Using a suite teardown works
 *** Keywords ***
 Navigate To Home Page
     # Requires Chromedriver in Path (See earlier Excercise)
-    Open Browser    http://34.225.240.91		chrome
+    Open Browser    http://34.225.240.91		Chrome

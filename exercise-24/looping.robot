@@ -15,7 +15,7 @@ Example Test Case
     Input Text  css:#typeofwork_add > input   plumbing
     Input Text  css:#cost_add > input   34.00
     Input Text  css:#invoice_dueDate > input   2018-10-31
-    Input Text  css:#comments_add > input   stanky
+    Input Text  css:#comments_add > input   Unclogged Drain
     Select From List By Value   css:#status_add > select    Past Due
     Click Button    id:createButton
     Page Should Contain     paulm's invoice
