@@ -10,7 +10,7 @@ Suite Teardown  Run Keywords    Close Browser
 *** Test Cases ***
 Example Test Case
     Click Add Invoice
-    Input Text  css:#invoiceNo_add > input   paulm's invoice
+    Input Text  css:#invoiceNo_add > input   ${my name}'s invoice
     Input Text  css:#compName_add > input   my example company
     Input Text  css:#typeofwork_add > input   plumbing
     Input Text  css:#cost_add > input   34.00

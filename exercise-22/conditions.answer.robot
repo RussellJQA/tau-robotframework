@@ -18,6 +18,7 @@ Example Test Case
     Input Text  css:#comments_add > input   stanky
     Select From List By Value   css:#status_add > select    Past Due
     Click Button    id:createButton
+    Page Should Contain     paulm's invoice
 
 *** Keywords ***
 Navigate To Home Page
