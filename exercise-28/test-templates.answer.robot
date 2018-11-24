@@ -9,8 +9,11 @@ Suite Teardown  Run Keywords    Close Browser
 
 *** Test Cases ***
 Example Test Case
-    Create Invoice  paulm's invoice     my example company     plumbing    34.00      2018-10-31   Unclogged Drain  Past Due
-    Capture Page Screenshot
+    Create Invoice  paulm-plain-invoice     my example company     plumbing    34.00      2018-10-31   Unclogged Drain  Past Due
+    Run Keyword And Expect Error    *   Create Invoice  paulm-empty-invoice     my example company     plumbing     ${EMPTY}     2018-10-31   Unclogged Drain  Past Due
+    Handle Alert
+    Run Keyword And Expect Error    *   Create Invoice  paulm-negative-invoice     my example company     plumbing    -20.00      2018-10-31   Unclogged Drain  Past Due
+    Handle Alert
 
 *** Keywords ***
 Create Invoice
@@ -24,7 +27,8 @@ Create Invoice
     Input Text  css:#comments_add > input   ${Comments}
     Select From List By Value   css:#status_add > select    ${Status}
     Click Button    id:createButton
-    Page Should Contain     paulm's invoice
+    Page Should Contain     ${Name}
+
 
 Navigate To Home Page
     # Requires Chromedriver in Path (See earlier Excercise)
