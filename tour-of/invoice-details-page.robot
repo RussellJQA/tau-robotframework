@@ -21,7 +21,7 @@ Enter Description
     [Arguments]     ${description}
     Input Text   css:[ng-model="invoice.comment"]   ${description}
 Submit Invoice Form
-    Click Button    id:createButton
+    Click Button    createButton
 
 Fill Out Invoice Details
     [Arguments]    ${invoice}

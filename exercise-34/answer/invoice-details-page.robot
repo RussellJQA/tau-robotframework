@@ -2,11 +2,11 @@
 Invoice Details Are Set To
     [Documentation]     This keywords fills out the invoice details page
     [Arguments]  ${Name}    ${Company}  ${Type}     ${Cost}     ${Date}     ${Comments}     ${Status}
-    Input Text  css:#invoiceNo_add > input   ${Name}
-    Input Text  css:#compName_add > input   ${Company}
-    Input Text  css:#typeofwork_add > input   ${Type}
-    Input Text  css:#cost_add > input   ${Cost}
-    Input Text  css:#invoice_dueDate > input   ${Date}
-    Input Text  css:#comments_add > input   ${Comments}
-    Select From List By Value   css:#status_add > select    ${Status}
-    Click Button    id:createButton
+    Input Text  invoice   ${Name}
+    Input Text  company   ${Company}
+    Input Text  type   ${Type}
+    Input Text  price   ${Cost}
+    Input Text  dueDate   ${Date}
+    Input Text  comment   ${Comments}
+    Select From List By Value   selectStatus    ${Status}
+    Click Button    createButton

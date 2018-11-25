@@ -8,13 +8,13 @@ Suite Teardown  Close Browser
 *** Test Cases ***
 Create an Invoice
     Click Add Invoice
-    Input Text  css:#invoiceNo_add > input   my example invoice
-    Input Text  css:#compName_add > input   my example company
-    Input Text  css:#typeofwork_add > input   plumbing
-    Input Text  css:#cost_add > input   34.00
-    Input Text  css:#invoice_dueDate > input   2018-10-31
-    Input Text  css:#comments_add > input   Unclogged Drain
-    Select From List By Value   css:#status_add > select    Past Due
+    Input Text  invoice   my example invoice
+    Input Text  company   my example company
+    Input Text  type   plumbing
+    Input Text  price   34.00
+    Input Text  dueDate   2018-10-31
+    Input Text  comment   Unclogged Drain
+    Select From List By Value   selectStatus    Past Due
 
 *** Keywords ***
 Navigate To Home Page

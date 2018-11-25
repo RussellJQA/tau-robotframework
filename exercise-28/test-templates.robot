@@ -10,14 +10,14 @@ Suite Teardown  Run Keywords    Close Browser
 *** Test Cases ***
 Create an Invoice
     Click Add Invoice
-    Input Text  css:#invoiceNo_add > input   paulm's invoice
-    Input Text  css:#compName_add > input   my example company
-    Input Text  css:#typeofwork_add > input   plumbing
-    Input Text  css:#cost_add > input   34.00
-    Input Text  css:#invoice_dueDate > input   2018-10-31
-    Input Text  css:#comments_add > input   Unclogged Drain
-    Select From List By Value   css:#status_add > select    Past Due
-    Click Button    id:createButton
+    Input Text  invoice   paulm's invoice
+    Input Text  company   my example company
+    Input Text  type   plumbing
+    Input Text  price   34.00
+    Input Text  dueDate   2018-10-31
+    Input Text  comment   Unclogged Drain
+    Select From List By Value   selectStatus    Past Due
+    Click Button    createButton
     Page Should Contain     paulm's invoice
     Capture Page Screenshot
 
