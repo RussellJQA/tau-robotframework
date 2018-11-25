@@ -7,7 +7,7 @@ Suite Teardown  Close Browser
 
 *** Test Cases ***
 Create an Invoice
-    Click Link  \#/addInvoice
+    Click Link  Add Invoice
 
 *** Keywords ***
 Navigate To Home Page

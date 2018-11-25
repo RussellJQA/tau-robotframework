@@ -32,5 +32,5 @@ Navigate To Home Page
 
 
 Click Add Invoice
-    Click Link  \#/addInvoice
+    Click Link  Add Invoice
     Page Should Contain Element     invoiceNo_add
