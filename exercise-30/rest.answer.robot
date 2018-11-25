@@ -28,6 +28,9 @@ Invoice Details Are Set To
     Input Text  comment   ${Comments}
     Select From List By Value   selectStatus    ${Status}
     Click Button    createButton
+    Create Session	invoice-manager http://34.197.198.114:8081
+    ${resp}=	Get Request	invoice-manager	/paulm-default-invoice
+    Should Be Equal As Strings	${resp.status_code}	200
 
 Navigate To Home Page
     # Requires Chromedriver in Path (See earlier Excercise)
