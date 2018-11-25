@@ -1,9 +1,11 @@
 *** Settings ***
 Library  SeleniumLibrary
 Library  OperatingSystem
+Library  RequestsLibrary
+Library     Collections
 
 Resource  ${EXEC_DIR}/resources.robot
-Suite Setup  Navigate To Home Page  Delete Invoice If Exists
+Suite Setup  Run Keywords   Navigate To Home Page  Delete Invoice If Exists
 Suite Teardown  Run Keywords    Close Browser
 
 
@@ -28,6 +30,9 @@ Invoice Details Are Set To
     Input Text  comment   ${Comments}
     Select From List By Value   selectStatus    ${Status}
     Click Button    createButton
+    Create Session	invoice-manager     ${ApiUrl}
+    ${resp}=	Get Request	invoice-manager	/invoices/paulm-default-invoice
+    Log To Console	${resp.json()}
 
 Navigate To Home Page
     # Requires Chromedriver in Path (See earlier Excercise)

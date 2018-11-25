@@ -1,4 +1,4 @@
 *** Variables ***
-${SiteUrl}    http://34.225.240.91
+${SiteUrl}    http://127.0.0.1:8000
 ${Browser}     Chrome
-${ApiUrl}     http://34.197.198.114:8081
+${ApiUrl}     http://127.0.0.1:8082
