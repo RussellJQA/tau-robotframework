@@ -5,7 +5,7 @@ Suite Teardown  Close Browser
 
 
 *** Test Cases ***
-Create an Invoice
+Using Variables
   Comment    This test should use variables for the url and the browser.
 
 *** Keywords ***
