@@ -14,7 +14,6 @@ Create an Invoice
     Input Text  price   34.00
     Input Text  dueDate   2018-10-31
     Input Text  comment   Unclogged Drain
-    Select From List By Value   ?
 
 
 *** Keywords ***
