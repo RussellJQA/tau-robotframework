@@ -14,4 +14,3 @@ Navigate To Home Page
     # Requires Chromedriver in Path (See earlier Excercise)
     Open Browser    ${SiteUrl}		${Browser}
     Set Selenium Implicit Wait    10 Seconds
-
