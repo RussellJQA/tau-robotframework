@@ -17,6 +17,3 @@ Is Weekend
         ...     Log To Console  "Yes!"
     ...   ELSE
         ...     Log To Console    "(Darth Vader) Noooo!!!"
-
-
-*** Keywords ***

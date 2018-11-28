@@ -7,11 +7,10 @@ Resource  ${EXEC_DIR}/resources.robot
 Suite Setup  Navigate To Home Page
 Suite Teardown  Run Keywords    Delete Invoice  Close Browser
 
-
 *** Test Cases ***
 Create an Invoice
     Click Add Invoice
-    ${invoiceNumber}   Create Invoice Number
+    Set Suite Variable   ${invoiceNumber}   Create Invoice Number
     Input Text  invoice   ${invoiceNumber}
     Input Text  company   my example company
     Input Text  type   plumbing
@@ -39,5 +38,5 @@ Create Invoice Number
     [Return]    ${RANUSER}
 
 Delete Invoice
-    Click Link  css:[id^='invoiceNo_paulm'] > a
+    Click Link  css:[id^='invoiceNo_${invoiceNumber}'] > a
     Click Button    deleteButton
