@@ -6,3 +6,4 @@ output.xml
 *.log
 .idea
 *.pyc
+*.db
