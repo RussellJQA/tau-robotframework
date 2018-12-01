@@ -21,6 +21,8 @@ Create an Invoice
     Input Text  comment   Unclogged Drain
     Select From List By Value   selectStatus    Past Due
     Click Button    createButton
+    Page Should Contain     ${invoiceNumber}
+
 
 *** Keywords ***
 Navigate To Home Page
