@@ -1,6 +1,7 @@
 *** Settings ***
 Library  SeleniumLibrary
 Library  OperatingSystem
+Library  String
 Library  Screenshot
 
 Resource  ${EXEC_DIR}/resources.robot
@@ -11,7 +12,9 @@ Suite Teardown  Run Keywords    Close Browser
 *** Test Cases ***
 Create an Invoice
     Click Add Invoice
-    Input Text  invoice   paulm's invoice
+    ${invoiceNumber}=    Create Invoice Number
+    Set Suite Variable   ${invoiceNumber}
+    Input Text  invoice   ${invoiceNumber}
     Input Text  company   my example company
     Input Text  type   plumbing
     Input Text  price   34.00
@@ -19,7 +22,7 @@ Create an Invoice
     Input Text  comment   Unclogged Drain
     Select From List By Value   selectStatus    Past Due
     Click Button    createButton
-    Page Should Contain     paulm's invoice
+    Page Should Contain     ${invoiceNumber}
     Take Screenshot
 
 *** Keywords ***
@@ -44,3 +47,7 @@ Delete Invoice
 Delete Invoice If Exists
     ${invoice_count}=   Get Element Count    css:[id^='invoiceNo_paulm'] > a
     Run Keyword If      ${invoice_count} > 0    Delete Invoice  css:[id^='invoiceNo_paulm'] > a
+
+Create Invoice Number
+    ${RANUSER}    Generate Random String    10    [LETTERS]
+    [Return]    ${RANUSER}
