@@ -10,7 +10,8 @@ Suite Teardown  Run Keywords    Close Browser
 *** Test Cases ***
 Create an Invoice
     Click Add Invoice
-    Input Text  invoice   paulm's invoice
+    Set Suite Variable   ${invoiceNumber}   Create Invoice Number
+    Input Text  invoice   ${invoiceNumber}
     Input Text  company   my example company
     Input Text  type   plumbing
     Input Text  price   34.00
@@ -18,7 +19,7 @@ Create an Invoice
     Input Text  comment   Unclogged Drain
     Select From List By Value   selectStatus    Past Due
     Click Button    createButton
-    Page Should Contain     paulm's invoice
+    Page Should Contain     ${invoiceNumber}
         ${invoices_ids}=   Get Web Elements    //tbody//tr//a
     log to console  ${invoices_ids}
     :FOR    ${invoice}    IN     ${invoices_ids}
