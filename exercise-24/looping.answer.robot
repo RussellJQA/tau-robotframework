@@ -22,10 +22,11 @@ Create an Invoice
     Select From List By Value   selectStatus    Past Due
     Click Button    createButton
     Page Should Contain     ${invoiceNumber}
-        ${invoices_ids}=   Get Web Elements    //tbody//tr//a
-    log to console  ${invoices_ids}
-    :FOR    ${invoice}    IN     ${invoices_ids}
-    \    Log To Console     ${invoice}
+    ${invoice_count}=   Get Element Count     //a[@href="#/editInvoice"]
+    :FOR    ${invoice}    IN RANGE    0  ${invoice_count}
+    \    ${invoice_id}=    Get Text   (//a[@href="#/editInvoice"])[${invoice + 1}]
+    \    Log To Console     ${invoice_id}
+
 
 
 *** Keywords ***
@@ -41,7 +42,7 @@ Click Add Invoice
     Click Link  Add Invoice
     Page Should Contain Element     invoiceNo_add
 
-Invoice
+Delete Invoice
     [Arguments]  ${invoice_element}
     Click Link  ${invoice_element}
     Click Button    deleteButton
