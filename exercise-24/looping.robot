@@ -12,7 +12,7 @@ Suite Teardown  Run Keywords    Close Browser
 Create an Invoice
     Click Add Invoice
     ${invoiceNumber}=    Create Invoice Number
-    Set Suite Variable  ${invoiceNumber}
+    Set Suite Variable   ${invoiceNumber}
     Input Text  invoice   ${invoiceNumber}
     Input Text  company   my example company
     Input Text  type   plumbing
@@ -36,7 +36,7 @@ Click Add Invoice
     Click Link  Add Invoice
     Page Should Contain Element     invoiceNo_add
 
-Invoice
+Delete Invoice
     [Arguments]  ${invoice_element}
     Click Link  ${invoice_element}
     Click Button    deleteButton
