@@ -9,16 +9,22 @@ Suite Teardown  Run Keywords    Close Browser
 
 *** Test Cases ***
 Create an Invoice
-    Given Invoice Creation Page Is Open
-    When Invoice Details Are Set To  paulm-default-invoice     my example company     plumbing     33.00     2018-10-31   Unclogged Drain  Past Due
-    Then Invoice Named Should Exist     paulm-default-invoice
+    Given I Need to Create an Invoice
+    When I Create a Basic Invoice
+    Then I Should See a Basic Invoice in the Invoice List
 
 *** Keywords ***
-Invoice Named Should Exist
+I Should See a Basic Invoice in the Invoice List
+    I Should See the Invoice in the Invoice List    paulm-default-invoice
+
+I Should See the Invoice in the Invoice List
     [Arguments]  ${Name}
     Page Should Contain     ${Name}
 
-Invoice Details Are Set To
+I Create a Basic Invoice
+    I Create an Invoice      paulm-default-invoice     my example company     plumbing     33.00     2018-10-31   Unclogged Drain  Past Due
+
+I Create an Invoice
     [Arguments]  ${Name}    ${Company}  ${Type}     ${Cost}     ${Date}     ${Comments}     ${Status}
     Input Text  invoice   ${Name}
     Input Text  company   ${Company}
@@ -36,8 +42,7 @@ Navigate To Home Page
     Set Selenium Implicit Wait    10 Seconds
     Set Selenium Speed     .25 seconds
 
-
-Invoice Creation Page Is Open
+I Need to Create an Invoice
     Click Link  Add Invoice
     Page Should Contain Element     invoiceNo_add
 
