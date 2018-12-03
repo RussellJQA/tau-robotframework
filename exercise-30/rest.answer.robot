@@ -2,7 +2,8 @@
 Library  SeleniumLibrary
 Library  OperatingSystem
 Library  RequestsLibrary
-Library     Collections
+Library  String
+Library  Collections
 
 Resource  ${EXEC_DIR}/resources.robot
 Suite Setup  Run Keywords   Navigate To Home Page  Delete Invoice If Exists
@@ -11,30 +12,24 @@ Suite Teardown  Run Keywords    Close Browser
 
 *** Test Cases ***
 Create an Invoice
-    Given Invoice Creation Page Is Open
-    When Invoice Details Are Set To  paulm-default-invoice     my example company     plumbing     33.00     2018-10-31   Unclogged Drain  Past Due
-    Then Invoice Named Should Exist     paulm-default-invoice
-
-*** Keywords ***
-Invoice Named Should Exist
-    [Arguments]  ${Name}
-    Page Should Contain     ${Name}
-
-Invoice Details Are Set To
-    [Arguments]  ${Name}    ${Company}  ${Type}     ${Cost}     ${Date}     ${Comments}     ${Status}
-    Input Text  invoice   ${Name}
-    Input Text  company   ${Company}
-    Input Text  type   ${Type}
-    Input Text  price   ${Cost}
-    Input Text  dueDate   ${Date}
-    Input Text  comment   ${Comments}
-    Select From List By Value   selectStatus    ${Status}
+    Click Add Invoice
+    ${invoiceNumber}=    Create Invoice Number
+    Set Suite Variable   ${invoiceNumber}
+    Input Text  invoice   ${invoiceNumber}
+    Input Text  company   my example company
+    Input Text  type   plumbing
+    Input Text  price   34.00
+    Input Text  dueDate   2018-10-31
+    Input Text  comment   Unclogged Drain
+    Select From List By Value   selectStatus    Past Due
     Click Button    createButton
     Create Session	invoice-manager     ${ApiUrl}
-    ${resp}=	Get Request	invoice-manager	/invoices/paulm-default-invoice
+    ${resp}=  Get Request    invoice-manager    /invoices/${invoiceNumber}
     Should Be Equal As Strings	${resp.status_code}	200
-	Dictionary Should Contain Value	${resp.json()}	paulm-default-invoice
+    Dictionary Should Contain Value	${resp.json()}	${invoiceNumber}
 
+
+*** Keywords ***
 Navigate To Home Page
     # Requires Chromedriver in Path (See earlier Excercise)
     Set Environment Variable    PATH  %{PATH}:${EXECDIR}/../drivers
@@ -43,8 +38,8 @@ Navigate To Home Page
     Set Selenium Speed     .25 seconds
 
 
-Invoice Creation Page Is Open
-    Click Link  Add Invoice
+Click Add Invoice
+    Click Link    Add Invoice
     Page Should Contain Element     invoiceNo_add
 
 Delete Invoice
@@ -56,3 +51,7 @@ Delete Invoice
 Delete Invoice If Exists
     ${invoice_count}=   Get Element Count    css:[id^='invoiceNo_paulm'] > a
     Run Keyword If      ${invoice_count} > 0    Delete Invoice  css:[id^='invoiceNo_paulm'] > a
+
+Create Invoice Number
+    ${RANUSER}    Generate Random String    10    [LETTERS]
+    [Return]    ${RANUSER}
