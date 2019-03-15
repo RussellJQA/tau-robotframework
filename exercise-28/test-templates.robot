@@ -9,6 +9,13 @@ Suite Teardown  Run Keywords    Close Browser
 
 
 *** Test Cases ***
+Create Invoice with negative Number
+    my Keyword  -1
+
+Create Invoice with floating point Number
+    my Keyword  1.3
+
+
 Create an Invoice
     Click Add Invoice
     ${invoiceNumber}=    Create Invoice Number

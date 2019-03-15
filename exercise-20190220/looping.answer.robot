@@ -1,12 +1,10 @@
 *** Settings ***
 Library  SeleniumLibrary
 Library  OperatingSystem
-Library  RequestsLibrary
 Library  String
-Library  Collections
 
 Resource  ${EXEC_DIR}/resources.robot
-Suite Setup  Run Keywords   Navigate To Home Page  Delete Invoice If Exists
+Suite Setup  Run Keywords   Navigate To Home Page   Delete Invoice If Exists
 Suite Teardown  Run Keywords    Close Browser
 
 
@@ -14,7 +12,7 @@ Suite Teardown  Run Keywords    Close Browser
 Create an Invoice
     Click Add Invoice
     ${invoiceNumber}=    Create Invoice Number
-    Set Suite Variable   ${invoiceNumber}
+    Set Suite Variable  ${invoiceNumber}
     Input Text  invoice   ${invoiceNumber}
     Input Text  company   my example company
     Input Text  type   plumbing
@@ -23,6 +21,13 @@ Create an Invoice
     Input Text  comment   Unclogged Drain
     Select From List By Value   selectStatus    Past Due
     Click Button    createButton
+    Page Should Contain     ${invoiceNumber}
+    ${invoice_count}=   Get Element Count     //a[@href="#/editInvoice"]
+    :FOR    ${invoice}    IN RANGE    0  ${invoice_count}
+    \    ${invoice_id}=    Get Text   (//a[@href="#/editInvoice"])[${invoice + 1}]
+    \    Log To Console     ${invoice_id}
+
+
 
 *** Keywords ***
 Navigate To Home Page
@@ -34,7 +39,7 @@ Navigate To Home Page
 
 
 Click Add Invoice
-    Click Link    Add Invoice
+    Click Link  Add Invoice
     Page Should Contain Element     invoiceNo_add
 
 Delete Invoice
@@ -42,11 +47,10 @@ Delete Invoice
     Click Link  ${invoice_element}
     Click Button    deleteButton
 
+Create Invoice Number
+    ${RANUSER}    Generate Random String    10    [LETTERS]
+    [Return]    ${RANUSER}
 
 Delete Invoice If Exists
     ${invoice_count}=   Get Element Count    css:[id^='invoiceNo_paulm'] > a
     Run Keyword If      ${invoice_count} > 0    Delete Invoice  css:[id^='invoiceNo_paulm'] > a
-
-Create Invoice Number
-    ${RANUSER}    Generate Random String    10    [LETTERS]
-    [Return]    ${RANUSER}

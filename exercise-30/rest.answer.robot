@@ -27,6 +27,11 @@ Create an Invoice
     ${resp}=  Get Request    invoice-manager    /invoices/${invoiceNumber}
     Should Be Equal As Strings	${resp.status_code}	200
     Dictionary Should Contain Value	${resp.json()}	${invoiceNumber}
+    Log To Console    ${resp.json()}
+    Delete Request    invoice-manager    /invoices/${invoiceNumber}
+
+
+
 
 
 *** Keywords ***

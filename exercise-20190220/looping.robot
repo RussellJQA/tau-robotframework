@@ -1,9 +1,7 @@
 *** Settings ***
 Library  SeleniumLibrary
 Library  OperatingSystem
-Library  RequestsLibrary
 Library  String
-Library  Collections
 
 Resource  ${EXEC_DIR}/resources.robot
 Suite Setup  Run Keywords   Navigate To Home Page  Delete Invoice If Exists
@@ -23,6 +21,7 @@ Create an Invoice
     Input Text  comment   Unclogged Drain
     Select From List By Value   selectStatus    Past Due
     Click Button    createButton
+    Page Should Contain     ${invoiceNumber}
 
 *** Keywords ***
 Navigate To Home Page
@@ -34,14 +33,13 @@ Navigate To Home Page
 
 
 Click Add Invoice
-    Click Link    Add Invoice
+    Click Link  Add Invoice
     Page Should Contain Element     invoiceNo_add
 
 Delete Invoice
     [Arguments]  ${invoice_element}
     Click Link  ${invoice_element}
     Click Button    deleteButton
-
 
 Delete Invoice If Exists
     ${invoice_count}=   Get Element Count    css:[id^='invoiceNo_paulm'] > a

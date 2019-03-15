@@ -1,11 +1,15 @@
 *** Settings ***
 Library  SeleniumLibrary
 
-Suite Setup  Navigate To Home Page
+Test Setup  Navigate To Home Page
 
 *** Test Cases ***
-Using a suite setup works
-  Comment    Using a suite setup to navigate to home page.
+
+Page contains invoice
+  Page Should Contain    Invoice
+
+Page contains Manager
+    Page Should Contain    Manager
 
 *** Keywords ***
 Navigate To Home Page
