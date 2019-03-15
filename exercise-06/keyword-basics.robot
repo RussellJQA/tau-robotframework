@@ -8,3 +8,9 @@ Check invoice manager page
     Set Environment Variable    PATH  %{PATH}:${EXECDIR}/../drivers
     Open Browser  http://34.225.240.91/   chrome
     Page Should Contain     Invoice Manager
+    My Logger
+
+
+*** Keywords ***
+My Logger
+    Log To Console    Hello world!

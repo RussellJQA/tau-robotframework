@@ -31,5 +31,6 @@ Click Add Invoice
     Page Should Contain Element     invoiceNo_add
 
 Create Invoice Number
-    ${RANUSER}    Generate Random String    10    [LETTERS]
-    [Return]    ${RANUSER}
+    Comment    Im creating a random invoice number so that it is unique and I can use this test repeatedly.
+    ${newInvoiceNumber}    Generate Random String    10    [LETTERS]
+    [Return]    ${newInvoiceNumber}
