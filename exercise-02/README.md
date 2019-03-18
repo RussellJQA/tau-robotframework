@@ -25,9 +25,9 @@ autocomplete-robot-framework
 What happened when you used the git clone command?
 
 ### NOTES:
--Must be python 2.7 for original client.
--[Install Atom](https://atom.io/)
--[Install Git](https://git-scm.com/downloads)
--[Install python 2.7](https://www.python.org/downloads/)
--[Install pip](https://pip.pypa.io/en/stable/installing/)
--[Install Chrome](https://www.google.com/chrome/)
+- Must be python 2.7 for original client.
+- [Install Atom](https://atom.io/)
+- [Install Git](https://git-scm.com/downloads)
+- [Install python 2.7](https://www.python.org/downloads/)
+- [Install pip](https://pip.pypa.io/en/stable/installing/)
+- [Install Chrome](https://www.google.com/chrome/)
