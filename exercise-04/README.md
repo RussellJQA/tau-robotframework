@@ -1,9 +1,9 @@
-#EXERCISE 04
-##WHERE DO KEYWORDS COME FROM?
-###PURPOSE:
+# EXERCISE 04
+## WHERE DO KEYWORDS COME FROM?
+### PURPOSE:
 The purpose of this exercise is to learn where keywords come from.
 
-###AGENDA:
+### AGENDA:
 1. Introduce the concept of Libraries (10 min):
    -Where do keywords come from?
    -How do we use keywords in our tests?
@@ -14,10 +14,10 @@ The purpose of this exercise is to learn where keywords come from.
 robot example-settings.robot
 ```
 
-####Extra Credit:
+#### Extra Credit:
 Close the browser after the test finishes.
 
-###DEBRIEF:
+### DEBRIEF:
 -Where did the "comment" keyword come from?
 -Why aren't all keywords automatically pulled in?
 -Who makes keywords?
