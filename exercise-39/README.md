@@ -11,7 +11,7 @@ The purpose of this exercise is to learn the basics of SUDS.
    - SudsLibrary is a library for functional testing of SOAP-based web services.
    - Basic SUDS usage.
    - Install the SUDS Library:
-     -```pip install robotframework-sudslibrary```
+     - ```pip install robotframework-sudslibrary```
 4. Add assertions to an existing test case.
 5. Create a new test case verifying United States data
 
