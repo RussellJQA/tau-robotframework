@@ -8,6 +8,9 @@ To learn about and use Selenium API drop down fields.
 2. Challenge (15 min):
    - Select the dropdown on the invoice creation/details page.
 
+### CHALLENGE (15 MINS):
+Select the dropdown on the invoice creation/details page.
+
 ### DEBRIEF (5 MINS):
 - What are considerations when dealing with dropdowns in manual testing?
 - How will your team find select components like dropdowns and options?

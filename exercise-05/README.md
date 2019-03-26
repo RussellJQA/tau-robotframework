@@ -13,6 +13,9 @@ The purpose of this exercise is learn what a test case is in RobotFramework.
 4. Format (Arrange, Act, Assert)
 5. Review tour-of.robot to see an example of a RobotFramework test case.
 
+### CHALLENGE (15 MIN):
+Verify that "Invoice Manager" is on the first page of the application.
+
 ### EXTRA CREDIT:
 Set up additional verification points to make sure that the page is the correct page.
 

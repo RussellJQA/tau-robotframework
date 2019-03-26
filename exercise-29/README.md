@@ -9,7 +9,13 @@ To introduce Gherkin and RobotFramework's Gherkin support.
 3. Challenge (30 mins):
    - Define Gherkin for adding an invoice
      - Focus on a simple happy path test case
-   - Implement the steps
+     - Implement the steps
+
+### CHALLENGE (30 MINS):
+- Split into teams
+- Define Gherkin for adding an invoice
+  - Focus on a simple happy path test case
+  - Implement the steps
 
 ### DEBRIEF (10 MINS):
 - What benefits do you see using Gherkin?

@@ -9,6 +9,9 @@ The purpose of this exercise is to learn about screenshots using the standard li
    - Remove the usage of the Selenium screenshot keyword.
    - Write a new implementation using the screenshot library.
 
+### CHALLENGE:
+Customize the output directory.
+
 ### DEBRIEF:
 - What if you want to do something that isn't in the standard library?
 - How do you search the standard library for functionality?
@@ -16,6 +19,3 @@ The purpose of this exercise is to learn about screenshots using the standard li
   - What does the library tell us?
     - [Screenshot Library](http://robotframework.org/robotframework/latest/libraries/Screenshot.html)
 - How do these screenshots differ from Selenium's?
-
-### CHALLENGE:
-Customize the output directory.

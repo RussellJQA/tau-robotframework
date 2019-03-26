@@ -17,6 +17,9 @@ Learn the basics of HTML so that we have a foundation for using Selenium.
 5. Challenge (20 min):
   - Create an html file called "intro-to.html" that presents your name and a quick bio
 
+### CHALLENGE (20 MIN):
+Create an html file called “intro-to-html” that presents your name and a quick bio.
+
 ### DEBRIEF (20 MIN):
 - What are tags?
 - What do tags consist of?

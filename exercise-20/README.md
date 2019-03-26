@@ -9,6 +9,9 @@ Learn how to create dynamic expectations for assertions.
 2. Challenge (15 mins):
    - Verify the Invoice we created shows up on the next page.
 
+### CHALLENGE (15 MINS):
+Verify the invoice we created shows up on the next page.
+
 ### DEBRIEF (15 MINS):
 - Did we just finish our first test?
   - Why not? What's missing?

@@ -16,6 +16,9 @@ The purpose of this exercise is to learn the basics of database testing.
    - What do you see?
 7. Add test cases to ensure that the data for the United States is valid and matches the expected data integrity.
 
+### CHALLENGE:
+Add test cases to ensure that the data for the United States is valid and matches the expected data integrity.
+
 ### QUESTIONS:
 - What should you be testing at the Database level versus the UI or the Service layers?
 - What are the pros and cons of Database testing?

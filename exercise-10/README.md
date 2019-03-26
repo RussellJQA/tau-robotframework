@@ -8,6 +8,9 @@ The purpose of this exercise is to learn how variables can be moved to resource 
 2. Challenge (15 min):
   - Move our variable to a resource file.
 
+### CHALLENGE (15 MIN):
+Move the variables to a location outside of the test file.
+
 ### DEBRIEF (5 MIN):
 - When would we want to externalize variables?
 - Are there instances when you would want to use one method over the other?

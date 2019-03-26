@@ -16,6 +16,9 @@ Show users how to properly document their keywords through effective documentati
 3. Run and review the libdoc tool:
    - ```python -m robot.libdoc $my_resources_file.robot documentation.html```
 
+### CHALLENGE (15 MINS):
+Add documentation around the existing keywords from previous exercises.
+
 ### DEBRIEF:
 - When would you want to use a comment?
 - Why use a comment?

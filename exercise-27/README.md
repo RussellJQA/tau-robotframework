@@ -21,5 +21,10 @@ Introduce participants to negative use cases and common ways of handling them.
    - Implement the following negative test case:
      - Create an invoice and omit the cost field - expect that an error is presented to the user.
 
+### CHALLENGE (20 MINS):
+- Split into teams of three & implement this negative use case:
+  - Create an invoice and omit the cost field
+  - Expect that an error is presented to user.
+
 ### EXTRA CREDIT:
 Add as many negative tests as you can as quickly as you can.

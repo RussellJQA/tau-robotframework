@@ -10,6 +10,9 @@ Learn how to create and use variables.
 4. Challenge (15 min):
   - Use variables in place of literals in test. Use a variable block if you like.
 
+### CHALLENGE (15 MIN):
+Use variables in place of literals in test. Use a variable block if you like.
+
 ### DEBRIEF (15 MIN):
 - Scope
 - Arguments

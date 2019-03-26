@@ -11,6 +11,12 @@ Introduce participants to test templates as a way of doing data driven testing.
      - "Run Keyword and Expect Error" may be helpful.
      - "Handle Alert" may be helpful
 
+### CHALLENGE:
+- Create Data Driven tests that add different invoices:
+  - Each invoice should have varied data.
+  - "Run Keyword and Expect Error" may be helpful.
+  - "Handle Alert" may be helpful.
+
 ### DEBRIEF (15 MINS):
 - What are the benefits of data driven testing?
 - Are there any downsides to data driven testing?

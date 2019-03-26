@@ -3,7 +3,9 @@
 ### PURPOSE:
 Introduce users to Robot Framework Hub to make management/accessibility of keywords easier.
 
-### AGENDA:
+### CHALLENGE:
+Install and run the RobotFramework hub:
+
 1. Install the hub:
    - [RobotFramework Hub](https://github.com/boakley/robotframework-hub)
    - ```pip install robotframework-hub```

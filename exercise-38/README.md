@@ -8,6 +8,9 @@ The purpose of this exercise is to learn how to manage data with automation
 2. Challenge (20 mins):
    - Create a random string and use it for the Invoice number.
 
+### CHALLENGE (20 MINS):
+Create a random string and use it for the Invoice number.
+
 ### EXTRA CREDIT:
 - Sign the random data you've created for Invoice number so that you can find it later.
   - Clean it up

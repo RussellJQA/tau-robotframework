@@ -11,7 +11,9 @@ Introduce participants to RESTful testing in RobotFramework.
 2. Challenge (30 mins):
    - Implement a RESTFUL call to DELETE an Invoice
 
-### DEBRIEF (5 MINS):
+### CHALLENGE (30 MINS):
+Implement a RESTFUL call to DELETE an Invoice.
+
 ### EXTRA CREDIT:
 Use the deleteAll endpoint to delete all Invoices.
 

@@ -8,6 +8,9 @@ Introduce users to how to deal with form submission.
 2. Challenge (15 mins):
    - Make your test submit the form.
 
+### CHALLENGE (15 MINS):
+Make your test submit the form.
+
 ### DEBRIEF (5 MINS):
 - What do we mean by a form submission?
 - What happens when a form is "submitted"?

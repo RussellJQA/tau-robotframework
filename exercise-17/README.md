@@ -8,5 +8,8 @@ Continue learning to use SeleniumLibrary to drive the browser.
 2. Challenge (3 mins):
    - Fill out the rest of the form.
 
+### CHALLENGE (30 MINS):
+Fill out the rest of the form.
+
 ### DEBRIEF (5 MINS):
 - How do we know if the text has actually been entered?

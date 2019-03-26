@@ -9,6 +9,9 @@ Participants learn how to record screenshots
 2. Challenge (15 mins):
    - Add an action to record a screenshot during the test case.
 
+### CHALLENGE (15 MINS):
+Add an action to record a screenshot during our test case.
+
 ### DEBRIEF (5 MINS):
 - Why do we use screenshots?
 - When do we need to use screenshots?
