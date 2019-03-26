@@ -3,7 +3,7 @@
 ### PURPOSE:
 The purpose of this exercise is to ensure that everyone has access to the project examples and source code. Ensure python 2.7, pip, chromedriver, chrome, git, and robot framework are installed properly.
 
-### AGENDA:
+### CHALLENGE:
 1. At command line type:
 ```
 git version
@@ -20,9 +20,6 @@ language-robot-framework
 autocomplete-robot-framework
 ```
 4. Open Atom and open cloned directory
-
-### DEBRIEF:
-What happened when you used the git clone command?
 
 ### NOTES:
 - Must be python 2.7 for original client.
