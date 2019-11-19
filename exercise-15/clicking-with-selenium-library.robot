@@ -1,6 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
-Resource  ${EXEC_DIR}/resources.robot
+Resource  resources.robot
 Suite Setup  Navigate To Home Page
 Suite Teardown  Close Browser
 

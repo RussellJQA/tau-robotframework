@@ -1,9 +1,12 @@
-# EXERCISE 32:
-## EXTERNALIZING KEYWORDS (25 MINS):
-### PURPOSE:
-The purpose of this exercise is to learn how to externalize RobotFramework keywords.
+# Externalizing Keywords
 
-### CHALLENGE (15 MINS):
-- Create a new externalized resource file with *** Keywords *** block.
-- Move identified keywords into the new resource file.
-- Run the test and verify that it still runs as expected.
+## Purpose:
+Learn how to externalize keywords
+
+## Learning Objectives:
+- Automators will be able to locate externalized keywords
+- Automators will be able to move a keyword to a resource file and use it
+- Given a test file and supporting files, Automators will be able to state the locations a keyword could be
+
+## Challenge:
+Create a keywor called "Add Invoice" and externalize it.

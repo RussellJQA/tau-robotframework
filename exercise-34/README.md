@@ -1,9 +1,9 @@
-# EXERCISE 34:
-## ROBOT FRAMEWORK HUB:
-### PURPOSE:
+ ## Robot Framework Hub:
+ 
+## Purpose:
 Introduce users to Robot Framework Hub to make management/accessibility of keywords easier.
 
-### CHALLENGE:
+## Challenge:
 Install and run the RobotFramework hub:
 
 1. Install the hub:

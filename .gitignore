@@ -7,3 +7,4 @@ output.xml
 .idea
 *.pyc
 *.db
+.DS_Store

@@ -2,8 +2,8 @@
 Library  SeleniumLibrary
 Library  OperatingSystem
 
-Resource  ${EXEC_DIR}/resources.robot
-Resource  ${EXEC_DIR}/invoice-details-page.robot
+Resource  resources.robot
+Resource  invoice-details-page.robot
 
 Suite Setup  Run Keywords   Navigate To Home Page  Delete Invoice If Exists
 Suite Teardown  Run Keywords    Close Browser
@@ -21,11 +21,9 @@ Invoice Named Should Exist
     Page Should Contain     ${Name}
 
 Navigate To Home Page
-    # Requires Chromedriver in Path (See earlier Excercise)
-    Set Environment Variable    PATH  %{PATH}:${EXECDIR}/../drivers
     Open Browser    ${SiteUrl}		${Browser}
-    Set Selenium Implicit Wait    10 Seconds
-    Set Selenium Speed     .25 seconds
+    Set Selenium Speed    1.5 Seconds
+    
 
 
 Invoice Creation Page Is Open

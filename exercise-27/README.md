@@ -1,15 +1,15 @@
-# EXERCISE 27:
-## NEGATIVE USE CASES (45 MINS):
-### PURPOSE:
-Introduce participants to negative use cases and common ways of handling them.
+# Negative Use Cases
 
-### CHALLENGE (20 MINS):
-- Split into teams of three & implement this negative use case:
-  - Create an invoice and omit the cost field
-  - Expect that an error is presented to user.
+## Purpose:
+Introduce participants to negative use cases and common ways of handling them
 
-### EXTRA CREDIT:
-Add as many negative tests as you can as quickly as you can.
+## Learning Objectives:
 
-### NOTES:
-[Alert Keywords](http://robotframework.org/SeleniumLibrary/SeleniumLibrary.html#Alert%20Should%20Be%20Present)
+- Automators will be able to recognize a negative test case
+- Automators will be able to create a negative test case, given a positive one
+
+## Challenge: 
+Split into teams of three & implement this negative use case: create an invoice and omit the cost field - expect that an error is presented to user.
+(20 Min)
+
+**Extra Credit:** Add as many negative tests as you can as quickly as you can.

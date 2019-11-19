@@ -1,5 +1,5 @@
 *** Keywords ***
-Invoice Details Are Set To
+Add Invoice
     [Documentation]     This keywords fills out the invoice details page
     [Arguments]  ${Name}    ${Company}  ${Type}     ${Cost}     ${Date}     ${Comments}     ${Status}
     Input Text  invoice   ${Name}

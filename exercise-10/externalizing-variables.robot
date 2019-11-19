@@ -4,8 +4,6 @@ Library  SeleniumLibrary
 Suite Setup  Navigate To Home Page
 Suite Teardown  Close Browser
 
-Resource  ${EXECDIR}/variables.robot
-#Resource  ${EXEC_DIR}/variables.robot
 
 *** Test Cases ***
 Create an Invoice
@@ -13,7 +11,6 @@ Create an Invoice
 
 *** Keywords ***
 Navigate To Home Page
-    Log To Console    ${paulsMessage} 2
     Open Browser    ${SiteUrl}		${Browser}
 
 *** Variables ***
