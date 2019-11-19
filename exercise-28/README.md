@@ -1,10 +1,14 @@
-# EXERCISE 28:
-## TEST TEMPLATES (60 MINS):
-### PURPOSE:
-Introduce participants to test templates as a way of doing data driven testing.
+# Test Templates
 
-### CHALLENGE (30 MINS):
-- Create Data Driven tests that add different invoices:
-  - Each invoice should have varied data.
-  - "Run Keyword and Expect Error" may be helpful.
-  - "Handle Alert" may be helpful.
+## Purpose: 
+
+Introduce participants to test templates as a way of doing data driven testing. 
+
+## Learning Objectives:
+
+- Automators will be able to recognize a test template
+- Automators will be able to create a “basic usage” test template for a templated test case
+- Automators will be able to use embedded argument syntax for test templates, given an example
+
+## Challenge: 
+Split into teams and make a data driven tests that add different values for the invoice fields. 

@@ -1,13 +1,12 @@
-# EXERCISE 29:
-## GHERKIN (115 MINS):
-### PURPOSE:
-To introduce Gherkin and RobotFramework's Gherkin support.
+# Gherkin 
 
-### CHALLENGE (30 MINS):
-- Split into teams
-- Define Gherkin for adding an invoice
-  - Focus on a simple happy path test case
-  - Implement the steps
+## Purpose
+Introduce participants to Gherkin for TDD and/or BDD projects.
 
-### NOTES:
-"Given, When, Then" are native to RobotFramework.
+## Learning Objectives:
+- Automators will be familiarized with basic Gherkin/Cucumber concepts
+- Automators will learn the basics of Features and Scenarios
+- Automators will learn how to use Gherkin syntax with Robot framework
+
+## Challenge: Split into teams and: define gherkin for adding an invoice (happy path). Implement steps.
+(10 Min)

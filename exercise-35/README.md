@@ -1,11 +1,4 @@
-# EXERCISE 35:
-## PYTHON - IMPORTING LOCAL LIBRARIES:
-### PURPOSE:
-Introduce users to using Local Libraries using RobotFramework.
+# Importing Local Libraries
 
-### CHALLENGE:
-- Add python code to perform division.
-  - Add a test case to verify that it works.
-- Add python code to perform modulus arithmetic.
-  - Modulus is the remainder of two inputs
-  - Add a test case to verify that it works.
+## Purpose
+Participant will learn how to utilize local libraries with Robot framework

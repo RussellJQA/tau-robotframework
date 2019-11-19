@@ -1,7 +1,11 @@
-# EXERCISE 19:
-## FORM SUBMISSION (25 MINS):
-### PURPOSE:
-Introduce users to how to deal with form submission.
+# Form Submission
 
-### CHALLENGE (15 MINS):
-Make your test submit the form.
+## Purpose: 
+Introduce users to how to deal with form submission
+
+## Learning Objectives:
+
+- Automators will be able to submit a form using SeleniumLibrary
+
+## Challenge: 
+Make your test submit the form (15 Min)

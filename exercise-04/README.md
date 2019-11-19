@@ -1,14 +1,16 @@
-# EXERCISE 04
-## WHERE DO KEYWORDS COME FROM?
-### PURPOSE:
+# Where Do Keywords Come From?
+
+## Purpose:
 The purpose of this exercise is to learn where keywords come from.
 
-### CHALLENGE (10 MIN):
-Determine Which Libraries Should be Included for the Test to Pass.
+## Learning Objectives:
 
-### EXTRA CREDIT:
-Close the browser after the test finishes.
+- Automators will be able to define what a keyword is
+- Automators will be able to identify correct syntax of a keyword
+- Automators will be able to use a keyword in a test script
+- Automators will be able to find keywords and keyword documents
 
-### NOTES:
-- [Selenium Library](http://robotframework.org/SeleniumLibrary/SeleniumLibrary.html)
-- [Standard Libraries](http://robotframework.org/robotframework/#user-guide)
+## Challenge:
+Determine which Library(ies) should be included for the test to pass (10 min)
+
+**Extra Credit:** Close the browser when the test finishes

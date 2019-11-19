@@ -1,14 +1,10 @@
-# EXERCISE 30:
-## API TESTING WITH ROBOT FRAMEWORK (40 MINS):
-### PURPOSE:
-Introduce participants to RESTful testing in RobotFramework.
+# API Testing with Robot Framework
 
-### CHALLENGE (30 MINS):
-Implement a RESTFUL call to DELETE an Invoice.
+## Purpose:
+Introduce participants to RESTful testing in Robot Framework
 
-### EXTRA CREDIT:
-Use the deleteAll endpoint to delete all Invoices.
+## Learning Objectives:
+- Automators will be able to call an api using the requests libraries
 
-### NOTES:
-- This exercise assumes example 41 has been done.
-- [RobotFramework Requests](https://github.com/bulkan/robotframework-requests/#readme)
+## Challenge: 
+Implement RESTFUL call to delete an invoice. (30 Min)
