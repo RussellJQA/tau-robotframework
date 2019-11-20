@@ -12,7 +12,7 @@ Suite Teardown  Run Keywords    Close Browser
 
 *** Test Cases ***
 Our Test Cases
-    HealthNow  Insurance
+    BlueCross  Insurance
     McDonalds  Fast food
     Burger King  Fast food
     Red Robin  Fast food
