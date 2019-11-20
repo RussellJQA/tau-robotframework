@@ -1,10 +1,15 @@
-# EXERCISE 09
-## VARIABLES (45 MIN):
-### PURPOSE:
+# User Supplied Variables
+
+## Purpose:
+
 Learn how to create and use variables.
 
-### CHALLENGE (15 MIN):
-Use variables in place of literals in test. Use a variable block if you like.
+## Learning Objectives:
 
-### NOTES:
-- [RobotFramework Variables](http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#variables)
+- Automators will define what a variable is and its uses
+- Automators will create and use a variable
+- Automators will be able to restate the block variables are used in
+- Automators will be able to create a variable inline and assign a value
+
+## Challenge:
+Use variables in place of literals in test. Use a variable block if you like. (15 min)

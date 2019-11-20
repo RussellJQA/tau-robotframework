@@ -1,15 +1,18 @@
-# EXERCISE 05
-## TEST CASES
-### PURPOSE:
-The purpose of this exercise is learn what a test case is in RobotFramework.
+# Test Cases
 
-### CHALLENGE (15 MIN):
-Verify that "Invoice Manager" is on the first page of the application.
+## Purpose:
+The purpose of this exercise is to learn what a test case is in Robotframework.
 
-### EXTRA CREDIT:
-Set up additional verification points to make sure that the page is the correct page.
+## Learning Objectives:
 
-### NOTES:
-- [RobotFramework Test Case Syntax](http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#test-case-syntax)
-- “Although Given-When-Then style is symptomatic to BDD, the basic idea is pretty common when writing tests or specification by example. Meszaros describes the pattern as Four-Phase Test. His four phases are Setup (Given), Exercise (When), Verify (Then) and Teardown [5]. Bill Wake came up with the formulation as Arrange, Act, Assert.”
-  - [Given-When-Then](https://martinfowler.com/bliki/GivenWhenThen.html)
+- Automators will be able to identify a test case in robotframework
+- Automators will be able to recognize the name of a test case
+- Automators will be able to read the steps of a test case
+- Automators will state the characters used to delimit parts of a line of a test case
+- Automators will be able to restate what the AAA format for test cases is
+
+## Challenge:
+
+Verify that "Invoice Manager" is on the first (1st) page of the application (15 min)
+
+**Extra Credit:** Set up more verification points to make sure that this page is the correct page.

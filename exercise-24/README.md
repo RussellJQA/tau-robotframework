@@ -1,10 +1,7 @@
-# EXERCISE 24:
-## LOOPING (75 MINS):
-### PURPOSE:
-Participants learn what a loop is and how to use them.
+# Looping
 
-### CHALLENGE (45 MINS):
-At the end of the testcase, log to console all the invoice numbers. Group if needed.
 
-### EXTRA CREDIT:
-Use a loop to have the test delete all of the Invoices.
+##Challenge: 
+At the end of the testcase, log to console all the invoice numbers. Group if needed. (45 Mins)
+
+**Extra Credit:** Have your tests delete all invoices. (Please let the rest of us know when you’ve done it - we’ll be missing data.)

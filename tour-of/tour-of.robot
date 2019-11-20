@@ -10,7 +10,7 @@ Resource    navigation.robot
 Resource    system.robot
 Resource    data.robot
 
-Suite Setup  Run Keywords   Setup Path  Initialize Test Data    Configure Selenium   Navigate To Homepage
+Suite Setup  Run Keywords   Initialize Test Data    Configure Selenium   Navigate To Homepage
 Suite Teardown  Exit Selenium
 
 *** Test Cases ***

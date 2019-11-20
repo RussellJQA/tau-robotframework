@@ -1,11 +1,16 @@
-# EXERCISE 16
-## INTRODUCTION TO ASSERTIONS (35 MIN):
-### PURPOSE:
-Introduce participants to first page assertion verifying the page navigation successful occurred.
+#Introduction to Assertions
 
-### CHALLENGE (20 MIN):
-Assert that the browser has navigated to the Add Invoice Page.
+## Purpose: 
+Introduce participants to assertions to validate page navigation.
 
-### EXTRA CREDIT:
-- Make additional verifications that will help you be sure you're on the right page.
-- Log clear error messages to the report/log files using the verification keywords you've chosen to use.
+## Learning Objectives:
+
+- Automators will be able to describe what an assertion is
+- Automators will be able to state which part of the AAA paradigm assert belongs to
+- Automators will be able to identify assertion keywords in library documentation such as SeleniumLibrary’s documentation.
+
+## Challenge: 
+Assert that we’re on the Add Invoice page (20 Min)
+
+**Extra Credit:** Make additional verifications that will help you be sure you’re on the right page. Log clear error messages to the report/log files using the verification keywords you’ve chosen to use.
+
