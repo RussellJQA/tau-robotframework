@@ -3,7 +3,6 @@ Library  SeleniumLibrary
 Library  OperatingSystem
 Library  Collections
 
-
 Resource    resources.robot
 Resource    invoice-details-page.robot
 Resource    navigation.robot
