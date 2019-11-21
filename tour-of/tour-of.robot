@@ -22,7 +22,4 @@ Create An Invoice
     Page Should Contain     ${invoice_id}
     Open Invoice    ${invoice_id}
 
-*** Keywords ***
-Open Invoice
-    [Arguments]    ${id}
-    Click Link    css:#invoiceNo_${id} > a
+
