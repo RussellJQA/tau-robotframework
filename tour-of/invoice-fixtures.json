@@ -1,10 +1,10 @@
 {
     "demo" : {
-        "company_name" : "Acme Industry",
-        "type_of_work" : "Manufacturing",
+        "company_name" : "Beaufort Fairmont, LLC",
+        "type_of_work" : "Test Automation",
         "status" : "Past Due",
         "amount" : "521.20",
-        "due_date" : "2018-10-31",
-        "description" : "Electric Turbine"
+        "due_date" : "2019-12-31",
+        "description" : "Test Automation experts helping us ramp up our automation efforts."
     }
 }
