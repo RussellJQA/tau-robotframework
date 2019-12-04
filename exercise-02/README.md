@@ -27,7 +27,7 @@ chromedriver --version
 - [Install Git](https://git-scm.com/downloads)
 - [Install python 3.6](https://www.python.org/downloads/)
 - [Install pip](https://pip.pypa.io/en/stable/installing/)
-- [Install Robot Framework](https://robotframework.org/#support)
+- [Install Robot Framework](https://pypi.org/project/robotframework/)
 - [Install SeleniumLibrary and WebDrivers](http://robotframework.org/SeleniumLibrary/)
 
 ##### Optional Tools:
