@@ -24,13 +24,23 @@ chromedriver --version
 
 
 #### Install Tools:
-
-- [Install Atom](https://atom.io/)
 - [Install Git](https://git-scm.com/downloads)
 - [Install python 3.6](https://www.python.org/downloads/)
 - [Install pip](https://pip.pypa.io/en/stable/installing/)
 - [Install Robot Framework](https://robotframework.org/#support)
 - [Install SeleniumLibrary and WebDrivers](http://robotframework.org/SeleniumLibrary/)
+
+##### Optional Tools:
+You'll need an IDE, hear are some to choose from
+- [Install VSCode](https://code.visualstudio.com/download)
+- [Install Atom](https://atom.io/)
+
+Some plugins for Atom that may be useful
+```
+gitlab-integration
+language-robot-framework
+autocomplete-robot-framework
+```
 
 
 #### Validate Installations
@@ -43,24 +53,3 @@ robot --version
 pip --version-
 chromedriver --version
 ```
-
-### Optional
-#### Atom
-
-Installing Atom
-    * Go to https://atom.io/   
-    * Verify that Windows is displayed as the operating system
-    * Click the Download link
-    * Follow the setup instructions to complete installation
-
-Atom is an integrated development environment(IDE) available at https://atom.io. If you prefer using Atom, some nice to have Packages are these.
-```
-gitlab-integration
-language-robot-framework
-autocomplete-robot-framework
-```
-#### Open Atom and open cloned directory
-
-#### VSCode 
-Install VSCode from the VSCode site.
-
