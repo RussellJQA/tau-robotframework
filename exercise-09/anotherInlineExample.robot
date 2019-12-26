@@ -10,12 +10,12 @@ Using Variable
   ${team}=  Set Variable  Jaguars
 
   # Log the same message, but this time we use the Variable we set up in the lines above.
-  Log   \nMy name is ${name}. My favorite color is ${color}. My favorite NFL team is the ${team}.  console=true
+  Log to Console   \nMy name is ${name}. My favorite color is ${color}. My favorite NFL team is the ${team}.  console=true
 
   # Log this in a profile-style
-  Log  Profile:  console=true
-  Log  Name: \t\t\t${name}  console=true
-  Log  Favorite color: \t${color}  console=true
-  Log  Favorite nfl team: \t${team}\n  console=true
+  Log to Console  Profile:  console=true
+  Log to Console  Name: \t\t\t${name}  console=true
+  Log to Console  Favorite color: \t${color}  console=true
+  Log to Console  Favorite nfl team: \t${team}\n  console=true
 
-  Log  ${name}'s favorite color is ${color}. For some reason he roots for the ${team}.  console=true
+  Log to Console  ${name}'s favorite color is ${color}. For some reason he roots for the ${team}.  console=true
