@@ -50,3 +50,11 @@ This document lists exercises in the order they are planned to be delivered. The
 Beaufort Fairmont appreciates your business! Find other courses, consulting, and support for software test automation at https://beaufortfairmont.com
 
 
+## Troubleshooting, Gotchas ##
+### URL ###
+08/31/20 - The System Under test in this course is the invoices application. If, at somepoint the url or IP address changes, I will have information here.
+
+### Missing data ###
+8/31/20 - Data in the system will be cleaned out every Monday at 12:00 AM ET (midnight, eastcoast of US timezone).
+
+If it is not that time, make sure to scroll the invoices page for your invoice.
