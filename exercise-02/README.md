@@ -29,6 +29,9 @@ chromedriver --version
 - [Install pip](https://pip.pypa.io/en/stable/installing/)
 - [Install Robot Framework](https://pypi.org/project/robotframework/)
 - [Install SeleniumLibrary and WebDrivers](http://robotframework.org/SeleniumLibrary/)
+    
+  To install Chrome and Firefox, I did:
+    webdrivermanager chrome firefox --linkpath C:\Users\rljohnson\AppData\Local\Programs\Python\Python39\Scripts
 
 ##### Optional Tools:
 You'll need an IDE, hear are some to choose from
@@ -49,7 +52,8 @@ At command line type to verify tool installation:
 ```
 git version
 python --version
+pip --version
 robot --version
-pip --version-
 chromedriver --version
+geckodriver --version
 ```

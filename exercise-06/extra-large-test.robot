@@ -34,4 +34,3 @@ Create an Invoice
     Should Be Equal As Strings  ${resp.status_code}  404
 
 *** Keywords ***
-

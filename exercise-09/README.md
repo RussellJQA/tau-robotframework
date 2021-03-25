@@ -12,4 +12,4 @@ Learn how to create and use variables.
 - Automators will be able to create a variable inline and assign a value
 
 ## Challenge:
-Use variables in place of literals in test. Use a variable block if you like. (15 min)
+Use variables in place of literals in the test. Use a variable block if you like. (15 min)

@@ -31,7 +31,7 @@ Course contents:
 * exercise-26 - Reporting and Logging. Learn who to view reports and logs.
 
 Additional, not covered in TAU recordings:
-* exercise-10 - Exerternalizing Variables. Learn how variables can be moved to resource files.
+* exercise-10 - Externalizing Variables. Learn how variables can be moved to resource files.
 * exercise-32 - Externalizing Keyworks. Learn how to externalize keywords.
 
 
