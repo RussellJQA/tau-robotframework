@@ -3,14 +3,14 @@
 
 def is_leap_year(year):
 
-    year = int(year);
+    year = int(year)
     # Leap Year Check
     if year % 4 == 0 and year % 100 != 0:
-        return True;
+        return True
     elif year % 100 == 0:
         print(year, "is not a Leap Year")
-        return False;
+        return False
     elif year % 400 ==0:
-        return True;
+        return True
     else:
-        return False;
+        return False
